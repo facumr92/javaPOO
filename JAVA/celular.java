@@ -24,17 +24,22 @@ class celular {
         System.out.println("Marca: " + marca + ", modelo: " + modelo + "año:" + anio);
     }
 
+    public void enviarMsj(){
+        System.out.println("Enviando mensaje desde tu: "+ modelo );
+    }
+
 
 
     public static void main(String[] args) {
 
         // Crear un objeto de la clase Celular 
 
-        celular micCelular = new celular("Apple", "Iphone", 2020);
+        celular micCelular = new celular("Apple", "Iphone X", 2020);
 
         // Llamar a métodos del objeto
         
         micCelular.mostrarInfo();
         micCelular.llamar();
+        micCelular.enviarMsj();
 }
 }
